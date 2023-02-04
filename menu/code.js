@@ -1,3 +1,4 @@
+
 function showDescription(item) {
     let description = document.getElementById('description');
     let itemName = document.getElementById('itemName');
