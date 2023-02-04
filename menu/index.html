@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Menu do Restaurante</h1>
+        <p>Selecione o item do menu para ver a descrição.</p>
+        <div class="menu">
+          <ul>
+            <li class="menu-item" onclick="showDescription(this)">Coxinha de Frango</li>
+            <li class="menu-item" onclick="showDescription(this)">Empada de Frango</li>
+            <li class="menu-item" onclick="showDescription(this)">Pastel de Queijo</li>
+            <li class="menu-item" onclick="showDescription(this)">Coxinha de Carne</li>
+            <li class="menu-item" onclick="showDescription(this)">Empada de Carne</li>
+          </ul>
+        </div>
+        <div id="modal" style="display: none;">
+          <div class="modal">
+            <h2 id="itemName"></h2>
+            <p id="description"></p>
+            <button onclick="closeDescription()">Fechar</button>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
