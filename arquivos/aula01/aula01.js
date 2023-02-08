@@ -1,12 +1,10 @@
 "use strict"
+let a = 9
 
-const objs = document.getElementsByTagName("div")
-const objs1 = [...document.getElementsByTagName("div")]
-
-objs1.forEach(element => {
-    console.log(element)
-    element.style.fontSize="40px"
-})
-
-console.log(objs)
-console.log(objs1)
+for(let i = 1; i < 11; i += 1){
+    if(i == 1){
+        console.log("TABUADA DO " + a)
+    }
+    console.log(a + " x " + i + " = " + i*a)
+}
+console.log("Fim do programa")
