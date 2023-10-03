@@ -1,6 +1,6 @@
 const btn_add = document.querySelector("#btn_add")
 const res = document.querySelector(".res")
-const del = document.querySelector("#del")
+const btn_del = document.querySelector("#btn_del")
 
 let pessoas = []
 
@@ -19,24 +19,19 @@ function pessoa(pnome, pidade){
     },
     this.setIdade = function(idade){
         this.idade = idade
-    },
-    this.info = function(){
-        let traco = "-------------------------------------------------"
-        console.log(`Nome: ${this.nome}\nIdade: ${this.idade}\nFim!`)
     }
 }
 
 const addPessoa = ()=>{
-    res.innerHTML = ""
     pessoas.map((p)=>{
         const div = document.createElement("div")
         div.setAttribute("class", "pessoa")
-        div.innerHTML = `Nome: ${p.getNome()}<br>Idade: ${p.getIdade()}</br>--------------------`
+        div.innerHTML = `Nome: ${p.getNome()}<br>Idade: ${p.getIdade()}`
         res.appendChild(div)
     })
 }
 
-del.addEventListener("click", ()=>{
+btn_del.addEventListener("click", ()=>{
     res.innerHTML = ""
 })
 
@@ -49,9 +44,8 @@ btn_add.addEventListener("click", (evt)=>{
     idade.value = ""
     nome.focus()
     addPessoa()
-    if(del){
+    if(btn_del){
         pessoas.pop()
     }
     console.log(p)
 })
-
