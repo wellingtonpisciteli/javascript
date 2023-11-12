@@ -1,5 +1,21 @@
-class carro{
+class CarroPadrao{
+    constructor(){
+        //Clasees Abstratas aqui, conceito.
+        if(this.constructor === CarroPadrao){
+            throw new TypeError("Esta class não pode ser instanciada") 
+        }
+        if(this.ligar === undefined){
+            throw new TypeError("É obrigatório implementar o método ligar") 
+        }
+        this.rodas = 4
+        this.portas = 4
+        this.ligado = false
+    }
+}
+
+class carro extends CarroPadrao{
     constructor(tipo, estagio){
+        super()
         if(tipo == 1){
             this.velMax = 120
             this.nome = "normal"
@@ -17,7 +33,13 @@ class carro{
         console.log(this.nome)
         console.log(this.velMax)
         console.log(this.turbo)
+        console.log(this.rodas)
+        console.log(this.portas)
+        console.log(this.ligado)
         console.log("----------------------")
+    }
+    ligar(){
+
     }
 }
 
@@ -62,6 +84,7 @@ class carroEspecial extends carro{
 const c1 = new carro(2, 2)
 const c2 = new carro(2, 0)
 const c3 = new carroEspecial(4)
+
 
 
 c1.info()
