@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.459);
+}
+
+.calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e9e8e8;
+    border: 3px solid #00000080;
+    border-radius: 7px;
+    width: 240px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 150px;
+} 
+
+.div_nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    margin-bottom: 10px;
+}
+
+.div_nome>p{
+    font-size: 1.4em;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.div_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+}
+
+.display{
+    width: 220px;
+    background-color: rgba(73, 170, 73, 0.548);
+    text-align: right;
+    padding: 5px;
+    font-family: monospace;
+    font-size: large;
+}
+
+.div_teclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;
+    flex-wrap: wrap;
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #aaa;
+    border: 3px solid #888;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.tecla_op{
+    background-color: #f44 !important;
+    border-color: #800 !important;
+
+}
