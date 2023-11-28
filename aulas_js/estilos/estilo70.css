@@ -88,3 +88,7 @@ body{
     border-color: #800 !important;
 
 }
+
+.ligado {
+    background-color: red;
+}
