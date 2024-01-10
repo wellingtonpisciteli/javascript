@@ -76,16 +76,11 @@ tcp.addEventListener("click", (evt)=>{
 })
 
 aba_calc.addEventListener("click", (evt)=>{
-    if(!sinal){
-        sinal = true
-        calc.classList.toggle("calc_exibir")
-        aba_calc.classList.toggle("aba_exibir")
-        aba_calc.innerHTML = "FECHAR"
+    calc.classList.toggle("calc_exibir")
+    if(calc.classList.contains("calc_exibir")){
+        aba_calc.innerHTML = "Close"
     }
     else{
-        sinal = false
-        aba_calc.innerHTML = "ABRIR"  
-        calc.classList.toggle("calc_exibir")
-        aba_calc.classList.toggle("aba_exibir")
+        aba_calc.innerHTML = "Open"
     }
 })
