@@ -1,5 +1,14 @@
 const data_tela=document.getElementById("data")
 const relogio_tela=document.getElementById("relogio")
+const btn_ativar=document.getElementById("btn_ativar")
+const btn_parar=document.getElementById("btn_parar")
+const Def_alarme=document.getElementById("Def_alarme")
+const hora_alarme=document.getElementById("hora_alarme")
+const temp_alarme=document.getElementById("temp_alarme")
+const comandos=document.getElementById("comandos")
+const timer=document.getElementById("timer")
+
+const som_alarme=new Audio("/aulas_js/alarme.mp3")
 
 const data=new Date()
 
@@ -8,13 +17,12 @@ if(dia_m<10){
     dia_m="0"+dia_m
 }
 const data_s=dia_m+"/"+data.getMonth()+1+"/"+data.getFullYear()
-let horas=data.getHours()
-let minutos=data.getMinutes()
-let segundoos=data.getSeconds()
-data_tela.innerHTML=data_s
-relogio_tela.innerHTML=data.getHours()+":"+data.getMinutes()+":"+data.getSeconds()
 
 const atualiza_relogio=()=>{
+    const relogio=new Date()
+    let horas=relogio.getHours()
+    let minutos=relogio.getMinutes()
+    let segundos=relogio.getSeconds()
     if(horas<10){
         horas="0"+horas
     }
@@ -24,12 +32,14 @@ const atualiza_relogio=()=>{
     if(segundos<10){
         segundos="0"+segundos
     }
-    console.log(horas)
-    console.log(minutos)
-    console.log(segundos)
+    const hora_completa=horas+":"+minutos+":"+segundos
+    relogio_tela.innerHTML=hora_completa 
 }
 
-atualiza_relogio()
+data_tela.innerHTML=data_s
+const intervalo=setInterval(atualiza_relogio,1000
+)
+
 
 // .getDate() = Retorna dia do mês
 // .getDay() = dia da semana (numero)
