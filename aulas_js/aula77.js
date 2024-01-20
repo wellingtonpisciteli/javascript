@@ -63,7 +63,7 @@ const atualiza_relogio=()=>{
       if(relogio.getTime()>=ts_alarme){ //se o tempo atual for maior ou igual ao tempo do alarme
         alarme_tocando=true //alarme tocando
         som_alarme.play() //toca o som
-        timer.classList.add("/aulas_js/alarme") //adiciona a classe alarme no timer
+        timer.classList.add("alarme") //adiciona a classe alarme no timer
       }
     }
 }

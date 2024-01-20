@@ -1,0 +1,45 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  main{
+    width: 400px;
+  }
+  .olhos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 389px;
+    height: 250px;
+  }
+  
+  .olho{
+    width: 200px;
+    height: 200px;
+    transform-origin: center center;
+  }
+  .abrir{
+    display: flex;
+    width: 85px;
+    height: 50px;
+    color: white;
+    background-color: #4a4a4a;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    padding: 11px;
+  }
+  #olho_e, #olho_d{
+    display: none;
+    width: 160px;
+  }
+  .olho_fechado{
+    width: 400px;
+  }
