@@ -8,7 +8,7 @@ btn_promessa.addEventListener("click", (evt)=>{
 
 const promessa = ()=>{
     let p = new Promise((resolve, reject)=>{
-        let resultado = false
+        let resultado = true
         let tempo = 3000
         setTimeout(()=>{
             if(resultado){
