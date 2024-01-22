@@ -9,7 +9,7 @@ const comandos=document.getElementById("comandos")
 const timer=document.getElementById("timer")
 
 
-const som_alarme=new Audio("/aulas_js/alarme.mp3")
+const som_alarme=new Audio("alarme.mp3")
 som_alarme.loop=-1 //Quantidade de vezes que o som vai tocar -1 para ser infinito
 
 let ts_atual=null //Variável que vai armazenar o timestamp atual
