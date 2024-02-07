@@ -9,5 +9,5 @@ btn_url.addEventListener("click", (evt)=>{
     //window.history.forward() //serve para ir para a pagina seguinte do historico
     //window.history.go(1) //indica a proxima pagina que quero navegar
     // console.log(url.value)
-    // window.location=url.value //para navegar para outra pagina
+    window.location=url.value //para navegar para outra pagina
 })
