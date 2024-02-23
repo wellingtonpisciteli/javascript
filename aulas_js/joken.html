@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="joken.css">
+</head>
+<body>
+    <header>JO-KEN-PÔ</header>
+
+    <div class="container">
+        <div id="play1" class="play play1">PLAYER-01</div>
+        <div id="escolha_01" class="escolher">
+            <form>
+                <input type="text" id="pedra" name="pedra" class="esc" value="PEDRA" readonly>
+                <input type="text" id="papel" name="papel" class="esc" value="PAPEL" readonly>
+                <input type="text" id="tezoura" name="tezoura" class="esc" value="TEZOURA" readonly>
+            </form> 
+        </div>
+        <div class="x">X</div>
+        <div id="play2" class="play play2">MAQUINA</div>
+        <div id="escolha_02" class="escolher_02">
+            <form>
+                <input type="text" value="PEDRA"  readonly>
+                <input type="text" value="PAPEL" readonly>
+                <input type="text" value="TEZOURA" readonly>
+            </form> 
+        </div>
+    </div>
+
+    <div id="btn_jogar" class="btn_jogar">
+        <button class="esc">JOGAR</button>
+    </div>
+
+    <div id="resultado" class="resultado">      
+        <P>VENCEDOR:</P>
+        <form>
+            <div id="res_vence" class="result"></div>
+        </form>     
+    </div>
+    
+    <script src="joken.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 50px;
+    width: 700px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid black;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(195, 0, 255);
+    border: 2px solid black;
+    margin: auto;
+    width: 700px;
+    height: 300px;
+    padding-bottom: 50px;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 140px;
+    border: 2px solid black;
+    color: black;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.play1{
+    align-self: center;
+    background-color: blue;
+    margin-bottom: 7px
+}
+
+#play1{
+    color: white;
+}
+
+.escolher{
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    left: 0px;  
+    bottom: 25px;
+    
+    
+    margin-left: 21px;
+    width: 250px;
+    height: 100px;
+    border: 2px solid black;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+}
+
+.esc:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.x{
+    display: flex;
+    justify-content: center;
+
+    color: red;
+    -webkit-text-stroke: 1px black;
+    font-size: 5em;
+    width: 150px;
+}
+
+.play2{
+    align-self: center;
+    background-color: yellow;
+    margin-bottom: 7px
+}
+
+.escolher_02{
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    right: 0px;  
+    bottom: 25px;
+
+    margin-right: 21px;
+    width: 250px;
+    height: 100px;
+    border: 2px solid black;
+    color: white;
+    background-color: rgb(255, 230, 0);
+    text-align: center;
+    justify-content: center;
+}
+
+.btn_jogar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: auto;
+    width: 700px;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.534);
+
+}
+
+button{
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-indent: 15px;
+    margin: auto;    
+    width: 700px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.resultado>p{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 15px;
+    background-color: white;
+    margin-left: 5px;
+    padding: 4px;
+    cursor: auto;
+    border: 2px solid black;
+    color: red;
+    font-weight: bolder;
+}
+
+input{
+    padding: 4px;
+    cursor: auto;
+    border: 2px solid black;
+    color: black;
+    font-weight: bolder;
+}
