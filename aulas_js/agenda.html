@@ -3,43 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modulos</title>
-    <link rel="stylesheet" href="estilo91.css">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="agenda.css">
 </head>
 <body>
     <div class="main">
+
         <div class="div_agenda">
             <header>AGENDA DE CONTATOS</header>
         </div>
+
         <div class="cadastrar">
             <p>CADASTRAR: </p>
         </div>
+
         <div id="form">
             <div id="campo">
                 <label>Nome</label>
-                <input type="text" id="f_nome" name="f_name">
+                <input type="text" id="f_nome" name="f_name" placeholder="Nome do contato">
             </div>
             <div id="campo">
                 <label>Telefone</label>
-                <input type="text" id="f_telefone" name="f_telefone">
+                <input type="number" id="f_telefone" name="f_telefone" placeholder="Apenas numeros" min="9" max="11">
             </div>
             <div id="campo">
                 <label>E-mail</label>
-                <input type="text" id="f_email" name="f_email">
+                <input type="text" id="f_email" name="f_email" placeholder="E-mail do contato">
             </div>
             <div>
                 <button id="btn_gravar">Gravar</button>
             </div>
-            <div id="destino_apagar">
-        
-            </div>
+            <div id="destino_apagar"></div>
         </div>
+
         <br>
+
         <div class="p">
             CONTATOS SALVOS:
         </div>
+
         <div id="lista_contatos"></div>
+
     </div>
-    <script src="aula91.js" type="module"></script>
+
+    <footer>
+        <p>© 2024 Borges. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="agenda.js" type="module"></script>
 </body>
 </html>

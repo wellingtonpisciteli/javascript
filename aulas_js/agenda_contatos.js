@@ -1,4 +1,4 @@
-import { contatos } from "./banco_contatos.js";
+import { contatos } from "./agenda_bancoContatos.js";
 
 let contato={
   todos_contatos:function(){
@@ -9,7 +9,7 @@ let contato={
     return contatos[i]
   },
 
-  add_contato:function(novo_contato,destino_dom, destino_apagar){
+  add_contato:function(novo_contato,destino_dom,destino_apagar){
     const cont={
         nome:novo_contato.nome,
         telefone:novo_contato.telefone,
