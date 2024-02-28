@@ -9,7 +9,7 @@ let contato={
     return contatos[i]
   },
 
-  add_contato:function(novo_contato,destino_dom,destino_apagar){
+  add_contato:function(novo_contato,destino_dom){
     const cont={
         nome:novo_contato.nome,
         telefone:novo_contato.telefone,
@@ -19,14 +19,14 @@ let contato={
     contatos.push(cont)
 
     destino_dom.innerHTML=""
-    destino_apagar.innerHTML = ""
 
-    contatos.map((c, indice)=>{
-      console.log(indice)
-      
+    contatos.map((c, indice)=>{ 
       if(c.nome!=undefined){
         let div=document.createElement("div")
         div.setAttribute("class", "contato")
+        const btn_apagar=document.createElement("button")
+        btn_apagar.setAttribute("class", "apagar")
+        btn_apagar.textContent="APAGAR";
         const p_nome=document.createElement("p")
         p_nome.innerHTML=c.nome
         const p_telefone=document.createElement("p")
@@ -36,25 +36,17 @@ let contato={
         div.appendChild(p_nome)   
         div.appendChild(p_telefone)   
         div.appendChild(p_email)
+        div.appendChild(btn_apagar)
         destino_dom.appendChild(div) 
-
-        let btn_apag=document.createElement("button")
-        btn_apag.setAttribute("id","btn_apaga")
-        btn_apag.setAttribute("class","btn_apaga")
-        btn_apag.innerHTML="APAGAR"
-        destino_apagar.appendChild(btn_apag) 
 
         let percorre_contato=document.querySelectorAll(".contato")
 
         percorre_contato.forEach((s)=>{
-          s.addEventListener("click",(evt, p)=>{
-            s.classList.add("selecionada")
-            btn_apag.addEventListener("click",()=>{
-              s.remove()
-              contatos.splice(p, 1)
-            })
+          btn_apagar.addEventListener("click",(evt, p)=>{
+            div.remove()
+            contatos.splice(p, 1)
           })
-        })
+        })  
       }
     })
   }

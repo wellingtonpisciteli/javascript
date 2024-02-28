@@ -39,6 +39,8 @@ body{
         width: 600px;
         margin: auto;
         background-color: rgb(214, 214, 214);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.445);
+
     }
 
     .cadastrar{
@@ -49,13 +51,12 @@ body{
         padding: 10px;
 
         background-color: rgb(117, 117, 235);
-        font-size: 1.3em;
+        font-size: 1.4em;
         color: black;
         font-weight: bolder;
     }
 
     #form{
-        position: relative;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -67,6 +68,8 @@ body{
         width: 300px;
         height: 250px;
         background-color: rgb(214, 214, 214);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
+
     }
 
     #campo{
@@ -82,6 +85,7 @@ body{
         margin-bottom: 20px;
         border: 1px solid black;
         text-transform: uppercase;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
     label{
@@ -97,16 +101,7 @@ body{
         font-size: 1em;
         transition: background-color 0.3s ease;
         border-radius: 3px;
-    }
-
-    #btn_gravar{
-        position: absolute;
-        left: 3.3%;    
-    }
-
-    .btn_apaga{
-        position: absolute;
-        left: 67.5%;    
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
     #btn_gravar:hover{
@@ -115,8 +110,17 @@ body{
         cursor: pointer;
     }
 
-    .btn_apaga:hover{
-        background-color: darkred;
+    .apagar{
+        margin: auto;
+        font-size: 15px;
+        padding: 1px;
+        margin-top: 15px;
+        color: black;
+        width: 80px;
+    }
+
+    .apagar:hover{
+        background-color: red;
         color: white;
         cursor: pointer;
     }
@@ -129,7 +133,6 @@ body{
 
     #btn_ver{
         cursor: pointer;
-        padding: 7px;
         margin-bottom: 10px;
     }
 
@@ -140,8 +143,7 @@ body{
 
     #lista_contatos{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 10px;
@@ -153,6 +155,7 @@ body{
         background-color: rgb(214, 214, 214);
         text-transform: uppercase;
         font-size: 1.1em;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
     .p{
@@ -167,6 +170,7 @@ body{
     .contato{
         display: flex;
         flex-direction: column;
+        width: 280px;
         color: black;
         border: 2px solid black;
         padding: 5px;
@@ -174,7 +178,7 @@ body{
         cursor: pointer;
         background-color: rgb(117, 117, 235);
         font-weight: bold;
-        transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+        transition: background-color 0.3s ease;
     }
 
     .contato:hover{
@@ -230,6 +234,7 @@ body{
         width: 260px;
         margin: auto;
         background-color: rgb(214, 214, 214);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.445);
     }
 
     .cadastrar{
@@ -258,6 +263,7 @@ body{
         width: 290px;
         height: 330px;
         background-color: rgb(214, 214, 214);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.445);
     }
 
     #campo{
@@ -274,6 +280,7 @@ body{
         border: 1px solid black;
         font-size: 1.1em;
         text-transform: uppercase;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
     label{
@@ -290,7 +297,7 @@ body{
         font-size: 1em;
         transition: background-color 0.3s ease;
         border-radius: 3px;
-
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
     #btn_gravar{
@@ -299,20 +306,8 @@ body{
         color:black;
     }
 
-    .btn_apaga{
-        position: absolute;
-        left: 69%;    
-        color:black;
-    }
-
     #btn_gravar:hover{
         background-color: darkblue;
-        color: white;
-        cursor: pointer;
-    }
-
-    .btn_apaga:hover{
-        background-color: darkred;
         color: white;
         cursor: pointer;
     }
@@ -334,6 +329,21 @@ body{
         color: white;
     }
 
+    .apagar{
+        margin: auto;
+        font-size: 15px;
+        padding: 1px;
+        margin-top: 15px;
+        color: black;
+        width: 80px;
+    }
+
+    .apagar:hover{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+
     #lista_contatos{
         display: flex;
         justify-content: flex-start;
@@ -349,9 +359,8 @@ body{
         background-color: white;
         text-transform: uppercase;
         font-size: 1.1em;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
-
-
 
     .p{
         display: flex;
