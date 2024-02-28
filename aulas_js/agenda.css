@@ -25,12 +25,12 @@ body{
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.589);
         border-radius: 10px;
     }
-    
+
     header{
         font-size: 1.7em;
         font-weight: bolder;
     }
-    
+
     .div_agenda{
         display: flex;
         justify-content: center;
@@ -41,20 +41,20 @@ body{
         margin: auto;
         background-color: rgb(214, 214, 214);
     }
-    
+
     .cadastrar{
         margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
-    
+
         background-color: rgb(117, 117, 235);
         font-size: 1.3em;
         color: black;
         font-weight: bolder;
     }
-    
+
     #form{
         position: relative;
         display: flex;
@@ -62,21 +62,21 @@ body{
         align-items: flex-start;
         flex-direction: column;
         margin: auto;
-    
+
         padding: 10px;
         border: 2px solid black;
         width: 300px;
         height: 250px;
         background-color: rgb(214, 214, 214);
     }
-    
+
     #campo{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
     }
-    
+
     input{
         width: 280px;
         padding: 5px;
@@ -84,13 +84,13 @@ body{
         border: 1px solid black;
         text-transform: uppercase;
     }
-    
+
     label{
         font-size: 1.1em;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
     }
-    
+
     button{
         padding: 10px;
         border: 1px solid black;
@@ -99,29 +99,29 @@ body{
         transition: background-color 0.3s ease;
         border-radius: 3px;
     }
-    
+
     #btn_gravar{
         position: absolute;
         left: 3.3%;    
     }
-    
+
     .btn_apaga{
         position: absolute;
         left: 67.5%;    
     }
-    
+
     #btn_gravar:hover{
         background-color: darkblue;
         color: white;
         cursor: pointer;
     }
-    
+
     .btn_apaga:hover{
         background-color: darkred;
         color: white;
         cursor: pointer;
     }
-    
+
     #lista_contatos{
         display: flex;
         justify-content: flex-start;
@@ -138,7 +138,7 @@ body{
         text-transform: uppercase;
         font-size: 1.1em;
     }
-    
+
     .p{
         display: flex;
         justify-content: center;
@@ -146,7 +146,7 @@ body{
         font-size: 1.5em;
         margin-bottom: 8px;
     }
-    
+
     .contato{
         display: flex;
         flex-direction: column;
@@ -157,15 +157,15 @@ body{
         cursor: pointer;
         background-color: rgb(117, 117, 235);
         font-weight: bold;
-        transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+        transition: background-color 0.3s ease; 
     }
-    
+
     .contato:hover{
         background-color: darkblue;
         color: white;
         font-weight: bold;
     }
-    
+
     .selecionada{
         background-color: darkred !important;
         color: white;
@@ -185,26 +185,25 @@ body{
         font-size: 12px;
       }
   }
-  
+
   /* Estilos para mobile */
   @media screen and (max-width: 767px) {
     .main{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 100px;
         border: 2px solid black;
         width: 350px;
         padding: 10px;
         background-color: rgb(117, 117, 235);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.589);
-        border-radius: 10px;
     }
 
     header{
         font-size: 1.4em;
         font-weight: bolder;
     }
-    
+
     .div_agenda{
         display: flex;
         justify-content: center;
@@ -215,20 +214,20 @@ body{
         margin: auto;
         background-color: rgb(214, 214, 214);
     }
-    
+
     .cadastrar{
         margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
-    
+
         background-color: rgb(117, 117, 235);
         font-size: 1.3em;
         color: black;
         font-weight: bolder;
     }
-    
+
     #form{
         position: relative;
         display: flex;
@@ -236,21 +235,21 @@ body{
         align-items: flex-start;
         flex-direction: column;
         margin: auto;
-    
+
         padding: 10px;
         border: 2px solid black;
         width: 290px;
-        height: 325px;
+        height: 330px;
         background-color: rgb(214, 214, 214);
     }
-    
+
     #campo{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
     }
-    
+
     input{
         width: 267px;
         padding: 10px;
@@ -259,14 +258,14 @@ body{
         font-size: 1.1em;
         text-transform: uppercase;
     }
-    
+
     label{
         font-size: 1.4em;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 5px;
     }
-    
+
     button{
         padding: 10px;
         border: 1px solid black;
@@ -276,29 +275,31 @@ body{
         border-radius: 3px;
 
     }
-    
+
     #btn_gravar{
         position: absolute;
         left: 3.6%;    
+        color:black;
     }
-    
+
     .btn_apaga{
         position: absolute;
         left: 69%;    
+        color:black;
     }
-    
+
     #btn_gravar:hover{
         background-color: darkblue;
         color: white;
         cursor: pointer;
     }
-    
+
     .btn_apaga:hover{
         background-color: darkred;
         color: white;
         cursor: pointer;
     }
-    
+
     #lista_contatos{
         display: flex;
         justify-content: flex-start;
@@ -311,11 +312,11 @@ body{
         padding: 5px;
         width: 300px;
         margin: auto;
-        background-color: rgb(214, 214, 214);
+        background-color: white;
         text-transform: uppercase;
         font-size: 1.1em;
     }
-    
+
     .p{
         display: flex;
         justify-content: center;
@@ -323,7 +324,7 @@ body{
         font-size: 1.4em;
         margin-bottom: 8px;
     }
-    
+
     .contato{
         display: flex;
         flex-direction: column;
@@ -332,18 +333,18 @@ body{
         padding: 5px;
         margin: 2px;
         cursor: pointer;
-        background-color: rgb(117, 117, 235);
+        background-color: rgb(214, 214, 214);
         font-weight: bold;
         width: 280px;
         transition: background-color 0.3s ease;
     }
-    
+
     .contato:hover{
         background-color: darkblue;
         color: white;
         font-weight: bold;
     }
-    
+
     .selecionada{
         background-color: darkred !important;
         color: white;
