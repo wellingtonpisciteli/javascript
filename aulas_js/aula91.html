@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="estilo91.css">
 </head>
 <body>
-    <div id="objetos" class="objetos"></div>
-    <div id="form">
-        <div id="campo">
-            <label>Nome</label>
-            <input type="text" id="f_nome" name="f_name">
+    <div class="main">
+        <div class="div_agenda">
+            <header>AGENDA DE CONTATOS</header>
         </div>
-        <div id="campo">
-            <label>Telefone</label>
-            <input type="text" id="f_telefone" name="f_telefone">
+        <div class="cadastrar">
+            <p>CADASTRAR: </p>
         </div>
-        <div id="campo">
-            <label>E-mail</label>
-            <input type="text" id="f_email" name="f_email">
+        <div id="form">
+            <div id="campo">
+                <label>Nome</label>
+                <input type="text" id="f_nome" name="f_name">
+            </div>
+            <div id="campo">
+                <label>Telefone</label>
+                <input type="text" id="f_telefone" name="f_telefone">
+            </div>
+            <div id="campo">
+                <label>E-mail</label>
+                <input type="text" id="f_email" name="f_email">
+            </div>
+            <div>
+                <button id="btn_gravar">Gravar</button>
+            </div>
+            <div id="destino_apagar">
+        
+            </div>
         </div>
-        <div id="botoes">
-            <button id="btn_gravar">Gravar</button>
+        <br>
+        <div class="p">
+            CONTATOS SALVOS:
         </div>
-    </div>
-    <br>
-    <p>CONTATOS SALVOS:</p>
-    <div id="lista_contatos">
+        <div id="lista_contatos"></div>
     </div>
     <script src="aula91.js" type="module"></script>
 </body>
