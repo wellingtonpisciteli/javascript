@@ -41,7 +41,7 @@ let contato={
         let btn_apag=document.createElement("button")
         btn_apag.setAttribute("id","btn_apaga")
         btn_apag.setAttribute("class","btn_apaga")
-        btn_apag.innerHTML="Apagar"
+        btn_apag.innerHTML="APAGAR"
         destino_apagar.appendChild(btn_apag) 
 
         let percorre_contato=document.querySelectorAll(".contato")

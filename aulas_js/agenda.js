@@ -6,9 +6,12 @@ const destino_apagar=document.getElementById("destino_apagar")
 const nome=document.getElementById("f_nome")
 const tel=document.getElementById("f_telefone")
 const email=document.getElementById("f_email")
+const bod=document.getElementById("bod")
 
 
 btn_gravar.addEventListener("click", (evt)=>{
+    bod.style.overflowY="auto";
+    
     if(nome.value==""){
         alert("Preencha os campos a seguir")
     }else if(tel.value==""){
