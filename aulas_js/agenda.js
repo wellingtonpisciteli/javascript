@@ -6,20 +6,17 @@ const destino_apagar=document.getElementById("destino_apagar")
 const nome=document.getElementById("f_nome")
 const tel=document.getElementById("f_telefone")
 const email=document.getElementById("f_email")
-const bod=document.getElementById("bod")
+const btn_ver=document.getElementById("btn_ver")
 
+let sinal=0
 
 btn_gravar.addEventListener("click", (evt)=>{
-    bod.style.overflowY="auto";
-    
     if(nome.value==""){
-        alert("Preencha os campos a seguir")
+        alert("PREENCHA OS CAMPOS!")
     }else if(tel.value==""){
-        alert("Preencha os campos a seguir")
-    }
-    else if(email.value==""){
-        alert("Preencha os campos a seguir")
+      alert("PREENCHA OS CAMPOS!")
     }else{
+      alert("CONTATO SALVO!")
         const conts={
             nome:document.getElementById("f_nome").value,
             telefone:document.getElementById("f_telefone").value,
@@ -31,3 +28,19 @@ btn_gravar.addEventListener("click", (evt)=>{
     tel.value=""
     email.value=""
 })
+
+lista_contatos.style.display="none";
+
+btn_ver.addEventListener("click",()=>{
+    if(sinal==0){
+        btn_ver.innerHTML="FECHAR"
+        lista_contatos.style.display="flex"
+        sinal=1
+    }else{
+        btn_ver.innerHTML="ABRIR"
+        lista_contatos.style.display="none"
+        sinal=0
+    }
+})
+
+

@@ -7,9 +7,12 @@
     font-family: 'Lato', sans-serif;
 }
 
+alert{
+    
+}
+
 body{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgba(0, 0, 255, 0.726));
-    overflow-y: hidden;
 }
 
 /* Estilos para desktop */
@@ -122,6 +125,23 @@ body{
         cursor: pointer;
     }
 
+    .btn_ver{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn_ver{
+        cursor: pointer;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    #btn_ver:hover{
+        background-color: darkblue;
+        color: white;
+    }
+
     #lista_contatos{
         display: flex;
         justify-content: flex-start;
@@ -142,6 +162,7 @@ body{
     .p{
         display: flex;
         justify-content: center;
+      
         font-weight: bolder;
         font-size: 1.5em;
         margin-bottom: 8px;
@@ -157,7 +178,7 @@ body{
         cursor: pointer;
         background-color: rgb(117, 117, 235);
         font-weight: bold;
-        transition: background-color 0.3s ease; 
+        transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
     }
 
     .contato:hover{
@@ -300,6 +321,23 @@ body{
         cursor: pointer;
     }
 
+    .btn_ver{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn_ver{
+        cursor: pointer;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    #btn_ver:hover{
+        background-color: darkblue;
+        color: white;
+    }
+
     #lista_contatos{
         display: flex;
         justify-content: flex-start;
@@ -317,6 +355,8 @@ body{
         font-size: 1.1em;
     }
 
+
+
     .p{
         display: flex;
         justify-content: center;
@@ -328,6 +368,7 @@ body{
     .contato{
         display: flex;
         flex-direction: column;
+        flex-wrap:wrap;
         color: black;
         border: 2px solid black;
         padding: 5px;

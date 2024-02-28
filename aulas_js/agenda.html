@@ -6,7 +6,7 @@
     <title>Agenda</title>
     <link rel="stylesheet" href="agenda.css">
 </head>
-<body id="bod">
+<body>
     <div class="main">
 
         <div class="div_agenda">
@@ -14,7 +14,7 @@
         </div>
 
         <div class="cadastrar">
-            <p>CADASTRAR: </p>
+            <p>CADASTRAR</p>
         </div>
 
         <div id="form">
@@ -28,7 +28,7 @@
             </div>
             <div id="campo">
                 <label>E-mail</label>
-                <input type="text" id="f_email" name="f_email" placeholder="E-mail do contato">
+                <input type="text" id="f_email" name="f_email" placeholder="E-mail (Opcional)">
             </div>
             <div>
                 <button id="btn_gravar">GRAVAR</button>
@@ -39,7 +39,11 @@
         <br>
 
         <div class="p">
-            CONTATOS SALVOS:
+            CONTATOS SALVOS
+        </div>
+
+        <div class="btn_ver">
+            <button id="btn_ver">ABRIR</button>
         </div>
 
         <div id="lista_contatos"></div>
@@ -49,7 +53,7 @@
     <footer>
         <p>© 2024 Borges. Todos os direitos reservados.</p>
     </footer>
-    
+
     <script src="agenda.js" type="module"></script>
 </body>
 </html>
