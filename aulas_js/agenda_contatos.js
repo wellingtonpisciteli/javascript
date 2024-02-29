@@ -43,8 +43,11 @@ let contato={
 
         percorre_contato.forEach((s)=>{
           btn_apagar.addEventListener("click",(evt, p)=>{
-            div.remove()
-            contatos.splice(p, 1)
+            let resposta_apagar=confirm("APAGAR CONTATO")
+            if(resposta_apagar==true){
+              div.remove()
+              contatos.splice(p, 1)
+            }
           })
         })  
       }
