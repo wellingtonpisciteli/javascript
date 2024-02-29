@@ -1,24 +1,35 @@
 @charset "UTF-8";
 
-/* Estilos para desktop */
-@media screen and (min-width: 1024px) {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgba(0, 0, 255, 0.726));
+}
+
+@media screen and (max-width: 767px) {
     .main{
         position: relative;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 100px;
         border: 2px solid black;
-        width: 650px;
+        width: 350px;
         padding: 10px;
         background-color: rgb(117, 117, 235);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.589);
-        border-radius: 10px;
     }
 
     .img{
         position: absolute;
-        top: -1.1%;
-        left: 4%;
+        top: -1%;
+        left: 1.4%;
         width: 35px;
     }
     
@@ -27,7 +38,7 @@
     }
 
     header{
-        font-size: 1.7em;
+        font-size: 1.3em;
         font-weight: bolder;
     }
 
@@ -37,11 +48,10 @@
         align-items: center;
         border: 2px solid black;
         padding: 25px;
-        width: 600px;
+        width: 260px;
         margin: auto;
         background-color: rgb(214, 214, 214);
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.445);
-
     }
 
     .cadastrar{
@@ -52,12 +62,13 @@
         padding: 10px;
 
         background-color: rgb(117, 117, 235);
-        font-size: 1.4em;
+        font-size: 1.3em;
         color: black;
         font-weight: bolder;
     }
 
     #form{
+        position: relative;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -66,11 +77,10 @@
 
         padding: 10px;
         border: 2px solid black;
-        width: 300px;
-        height: 250px;
+        width: 290px;
+        height: 330px;
         background-color: rgb(214, 214, 214);
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
-
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.445);
     }
 
     #campo{
@@ -81,18 +91,20 @@
     }
 
     input{
-        width: 280px;
-        padding: 5px;
+        width: 267px;
+        padding: 10px;
         margin-bottom: 20px;
         border: 1px solid black;
+        font-size: 1.1em;
         text-transform: uppercase;
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
     label{
-        font-size: 1.1em;
+        font-size: 1.4em;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 5px;
     }
 
     button{
@@ -105,10 +117,33 @@
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
     }
 
+    #btn_gravar{
+        position: absolute;
+        left: 3.6%;    
+        color:black;
+    }
+
     #btn_gravar:hover{
         background-color: darkblue;
         color: white;
         cursor: pointer;
+    }
+
+    .btn_ver{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn_ver{
+        cursor: pointer;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    #btn_ver:hover{
+        background-color: darkblue;
+        color: white;
     }
 
     .apagar{
@@ -126,34 +161,19 @@
         cursor: pointer;
     }
 
-    .btn_ver{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #btn_ver{
-        cursor: pointer;
-        margin-bottom: 10px;
-    }
-
-    #btn_ver:hover{
-        background-color: darkblue;
-        color: white;
-    }
-
     #lista_contatos{
         display: flex;
-        justify-content: center;
-        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
         flex-wrap: wrap;
         margin-top: 10px;
         border: 2px solid black;
         font-weight: bold;
         padding: 5px;
-        width: 600px;
+        width: 300px;
         margin: auto;
-        background-color: rgb(214, 214, 214);
+        background-color: white;
         text-transform: uppercase;
         font-size: 1.1em;
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.274);
@@ -162,23 +182,23 @@
     .p{
         display: flex;
         justify-content: center;
-      
         font-weight: bolder;
-        font-size: 1.5em;
+        font-size: 1.4em;
         margin-bottom: 8px;
     }
 
     .contato{
         display: flex;
         flex-direction: column;
-        width: 280px;
+        flex-wrap:wrap;
         color: black;
         border: 2px solid black;
         padding: 5px;
         margin: 2px;
         cursor: pointer;
-        background-color: rgb(117, 117, 235);
+        background-color: rgb(214, 214, 214);
         font-weight: bold;
+        width: 280px;
         transition: background-color 0.3s ease;
     }
 
@@ -200,7 +220,5 @@
         color: #fff; 
         padding: 4px; 
         font-size: 12px;
-      }
   }
-
-  
+}
