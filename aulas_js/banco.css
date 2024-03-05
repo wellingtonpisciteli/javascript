@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tela{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(15, 185, 0);
+    width: 850px;
+    height: 500px;
+}
+
+header{
+    background-color: green;
+    padding: 25px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.telaBotoes{
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5px;
+    top: 83px;
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    height: 410px;
+    background-color: darkgreen;
+}
+
+button{
+    height: 30px;
+    width: 180px; 
+    margin: 25px;
+    cursor: pointer;
+}
+
+.Teladireita{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 83px;
+    width: 605px;
+    height: 410px;
+    background-image: url(green.jpeg) ;
+}
