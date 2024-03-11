@@ -36,18 +36,40 @@ header{
     border-radius: 0px 30px 0px 0px;
 }
 
-.telaBtnCriar{
+.telaBtnCriar {
     position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    left: 5px;
-    top: 83px;
+    left: 0px;
+    top: 79px;
     display: flex;
-    width: 230px;
-    height: 410px;
-    background-color: rgba(1, 77, 1, 0.527);
+    width: 277px;
+    height: 421px;
+    background-image: linear-gradient(to left, green, rgba(157, 255, 0, 0.466));
+}
+
+.telaImagem {
+    position: absolute;
+    display: none;
+    width: 277px;
+    height: 421px;
+    background-image: url(maoFolha.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+    top: 79px;
+}
+
+.telaImagem img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .txt{
@@ -62,7 +84,7 @@ header{
 button{
     height: 25px;
     width: 150px; 
-    margin: 5px;
+    margin: 15px;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     font-weight: bolder;
@@ -70,14 +92,14 @@ button{
     border-radius: 5px;
 }
 
-.telaDireita{
+.telaDireita {
     display: flex;
     position: absolute;
-    right: 5px;
-    top: 83px;
-    width: 610px;
-    height: 410px;
-    background-image: url(green.jpeg) ;
+    right: 0px;
+    top: 79px;
+    width: 573px;
+    height: 421px;
+    background-image: url(green.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -86,14 +108,46 @@ button{
     display: none;
     position: absolute;
     flex-direction: column;
-    right: 5px;
-    top: 83.5px;
-    width: 610px;
-    height: 410px;
-    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    right: 0px;
+    top: 79.5px;
+    width: 573px;
+    height: 421px;
+    background-image: linear-gradient(to right, green, rgba(157, 255, 0, 0.63));
 }
 
-.cadastrar input{
-    width: 50px;
+.criar {
+    border: 2px solid rgba(0, 0, 0, 0.055);
+    margin-top: 7.8%;
+    padding: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.267);
+    background-color: #90ee9080;
+    width: 500px;
+    height: 300px;
+}
+
+.criar h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.criar label{
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.criar input{
+    display: flex;
+    width: 400px;
     height: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+.criar>button{
+    margin-left: 35% ; 
 }
