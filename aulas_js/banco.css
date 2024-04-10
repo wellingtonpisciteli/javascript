@@ -12,9 +12,10 @@ body{
     background-color: white;
     width: 100vw;
     height: 100vh;
-    background-image: url(backArvore.jpeg);
+    background-image: linear-gradient(to right, rgba(3, 194, 3, 0.842), rgb(27, 97, 0));
+    /* background-image: url(backArvore.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .tela{
@@ -26,6 +27,7 @@ body{
     width: 850px;
     height: 500px;
     border-radius: 0px 30px 0px 0px ;
+    box-shadow: 0px 0px 50px rgba(164, 255, 28, 0.466);
 }
 
 header{
@@ -104,6 +106,17 @@ button{
     background-repeat: no-repeat;
 }
 
+.telaDireita>h1{
+    color: rgba(0, 100, 0, 0.774);
+    margin: auto;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(231, 247, 8, 0.247);
+    letter-spacing: 10px;
+    font-size: 2.5em;
+
+}
+
 .cadastrar{
     display: none;
     position: absolute;
@@ -132,6 +145,7 @@ button{
     justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 1.8em;
 }
 
 .criar label{
@@ -150,4 +164,17 @@ button{
 
 .criar>button{
     margin-left: 35% ; 
+}
+
+.cadastrar02{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    right: 0px;
+    top: 79.5px;
+    width: 573px;
+    height: 421px;
+    background-image: linear-gradient(to right, green, rgba(157, 255, 0, 0.63));
 }

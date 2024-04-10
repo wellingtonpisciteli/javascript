@@ -10,21 +10,21 @@
     <main id="caixa" class="caixa">
         <div id="tela" class="tela">
             <header>YAYABANK | Mais que um banco</header>
+
             <div class="telaBtnCriar" id="telaBtnCriar">
                 <p class="txt">🌱 Você se preocupa com o meio ambiente? Nós também! Com cada transação que você faz, uma parte dos nossos lucros é reinvestida em projetos de conservação ambiental, reflorestamento e desenvolvimento sustentável.
                  <br>   
                  <br>
                 🌍 Junte-se a nós na luta pela preservação do planeta. Escolha o YaYaBank para suas necessidades bancárias e faça parte da mudança positiva que o mundo precisa.</p>
                 <button id="btnAbrir">ABRIR CONTA</button>
-                <!-- <button>DEPOSITAR</button>
-                <button>SACAR</button>
-                <button>SALDO</button>
-                <button>PAGAR CONTAS</button> -->
             </div>
+
             <div class="telaImagem" id="telaImagem">
                 <img src="voltar.png" id="imgVolta" alt="">
             </div>
-            <div id="telaDireita" class="telaDireita"></div>
+
+            <div id="telaDireita" class="telaDireita"><h1>YAYA</h1></div>
+
             <div id="cadastrar" class="cadastrar">
                 <div class="criar">
                     <h1>CRIAR CONTA</h1>
@@ -34,11 +34,24 @@
                     <input type="number" id="telefone">
                     <label for="E-mail">E-mail</label>
                     <input type="text" id="email">
-                    <button>PRÓXIMO</button>
+                    <button id="proximo">PRÓXIMO</button>
                 </div>
             </div>
+
+            <div id="cadastrar02" class="cadastrar02">
+                <div class="criar 02">
+                    <h1>CRIAR CONTA</h1>
+                    <label for="user">Usuário</label>
+                    <input type="text" id="user">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha">
+                    <button id="anterior">ANTERIOR</button>
+                    <button id="criar">CRIAR</button>
+                </div>
+            </div>
+
         </div>
     </main>
-    <script src="bancoDOM.js" type="module"></script>
+    <script src="bancoDOM.js"></script>
 </body>
 </html>
