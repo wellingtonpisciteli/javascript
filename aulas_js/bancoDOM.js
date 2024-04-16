@@ -8,11 +8,13 @@ const cadastrar02=document.getElementById("cadastrar02")
 const proximo=document.getElementById("proximo")
 const anterior=document.getElementById("anterior")
 const nome=document.getElementById("nome")
+const nomeUser=document.getElementById("nomeUser")
 const telefone=document.getElementById("telefone")
 const criar=document.getElementById("criar")
 const carregando=document.getElementById("carregando")
 const mensagem=document.getElementById("mensagem")
 const dentroBanco=document.getElementById("dentroBanco")
+const cartao=document.getElementById("cartao")
 
 
 
@@ -41,32 +43,24 @@ btnAbrir.addEventListener("click", ()=>{
         mensagem.style.display="flex"
         console.log(nome.value)
         setTimeout(function(){
-
             mensagem.style.display="none"
             carregando.style.display="none"
             dentroBanco.style.display="flex"
 
             let header=document.createElement("h1")
-            header.textContent="Bem vindo "+nome.value
+            header.textContent="Bem vindo "+nomeUser.value
             header.classList.add("headerDinamic")
             dentroBanco.appendChild(header)
 
-            let saldo=document.createElement("div")
-            let saldoValor=0
-            saldo.textContent="Saldo: "+saldoValor+ ",00"
-            saldo.classList.add("saldo")
-            dentroBanco.appendChild(saldo)
+            let saldoVisor=document.createElement("div")
+            saldoVisor.classList.add("saldoDinamic")
+            saldoVisor.textContent="R$ "+1567+",00"
+            cartao.appendChild(saldoVisor)
 
-            let depositar=document.createElement("button")
-            depositar.textContent="Depositar"
-            depositar.classList.add("depositar")
-            dentroBanco.appendChild(depositar)
-
-            let sacar=document.createElement("button")
-            sacar.textContent="Sacar"
-            sacar.classList.add("sacar")
-            dentroBanco.appendChild(sacar)
-            
+            let nomeVisor=document.createElement("div")
+            nomeVisor.classList.add("nomeVisor")
+            nomeVisor.textContent=nome.value
+            cartao.appendChild(nomeVisor)
         },3000)
      
     } )
