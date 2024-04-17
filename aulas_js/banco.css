@@ -27,6 +27,7 @@ body{
     height: 500px;
     border-radius: 0px 30px 0px 0px ;
     box-shadow: 0px 0px 50px rgba(164, 255, 28, 0.466);
+    border: 2px solid rgba(0, 0, 0, 0.315);
 }
 
 header{
@@ -105,15 +106,34 @@ button{
     background-repeat: no-repeat;
 }
 
-.telaDireita>h1{
-    color: rgba(0, 100, 0, 0.774);
+.telaDireita>div{
+    display: flex;
     margin: auto;
-    font-weight: lighter;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(231, 247, 8, 0.247);
-    letter-spacing: 10px;
-    font-size: 2.5em;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid rgb(0, 105, 5);
+    border-radius: 0px 30px 0px 0px ;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.74);
+    padding: 10px;
+    height: 320px;
+    width: 350px;
+}
 
+.telaDireita img{
+    width: 150px;
+    margin: auto;
+    background-image: none;
+}
+
+.telaDireita>div>input{
+    margin: 10px;
+    padding: 7px;
+    background-color: rgb(245, 245, 245);
+}
+
+.telaDireita>div>button{
+    margin: auto;
+    height: 35px;
 }
 
 .cadastrar{
@@ -205,7 +225,6 @@ button{
 }
 
 .cartao {
-    /* background-color: #24a319; */
     background-image: linear-gradient(to  bottom right, #35ff23, #4f7631);
     width: 450px;
     height: 271px;
@@ -291,6 +310,43 @@ li a:hover {
     background-color: rgb(0, 100, 0);
 }
 
+.perfilDinamic {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    width: 663px;
+    height: 421px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.perfilInfo {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.192);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.411);
+}
+
+.perfilInfo>input{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: default;
+}
+
+.perfilInfo>button{
+    margin: auto;
+    padding: 15px;
+}
+
 .saldoDinamic {
     position: absolute;
     top: 122px;
@@ -311,6 +367,14 @@ li a:hover {
     padding: 20px;
     font-size: 1.8em;
     color: rgb(1, 70, 1);
+}
+
+.sair {
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 }
